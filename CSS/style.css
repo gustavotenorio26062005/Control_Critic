@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&display=swap');
+
+:root {
+    --cor-primaria: #FFD33C;
+    --cor-secundaria: #000000;
+    --cor-fonte: #FFFFFF;
+}
+
+*{
+    font-family: 'Anton', Calibri, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 1900px;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: var(--cor-secundaria);
+}
+
+.slogan{
+    color: var(--cor-fonte);
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Bungee Spice', cursive;
+    cursor: context-menu;
+}
+
+.imglogo{
+    width: 25%;
+}
+
+.imgadelino{
+    width: 10%;
+}
+
+nav{
+    display: inline;
+}
+
+.QSFC{
+    background-color: var(--cor-secundaria);
+    padding-right: 5%;
+}
+
+.QSFC a{
+    color: var(--cor-fonte);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    background-color: var(--cor-primaria);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 1px solid black;
+    z-index: 0;
+}
+
+.dp-menu ul li {
+    width: 100%;
+    z-index: 1;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-secundaria);
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.4s;
+    font-size: clamp(1rem, 2vw, 2rem);
+    width: 10%;
+    z-index: 2;
+}
+
+.dp-menu ul li a:hover {
+    background-color: #FFFF00;
+    z-index: 3;
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    position: absolute;
+    z-index: 4;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+    max-width: 1894px;
+    width: 99.8%;
+    z-index: 5;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+    z-index: 6;
+}
+
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+    z-index: 7;
+}
+
+#menu-h ul li {
+    display: inline;
+    z-index: 8;
+}
+
+#menu-h ul li a {
+    color: var(--cor-secundaria);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.4s;
+    font-size: clamp(1rem, 1vw, 2rem);
+    z-index: 9;
+}
+
+#menu-h ul li a:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fonte);
+    z-index: 10;
+}
+
+.search-box{
+    display: inline;
+    background: var(--cor-secundaria);
+    padding: 10px;
+    border-radius: 40px;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 1%;
+    z-index: 11;
+}
+
+.search-txt{
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--cor-fonte);
+    font-size: 16px;
+    z-index: 12;
+}
+
+.lupa{
+    position: relative;
+    top: 10px;
+    max-height: 30px;
+    max-width: 30px;
+    z-index: 13;
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+    padding-bottom: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.coluna{
+width: 30%;
+padding-bottom: 50px;
+min-width: 400px;
+display: inline-block;
+float: left;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: var(--cor-primaria);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.imgitem{
+    width: 95%;
+    border: 5px solid black;
+}
+
+/*download dos jogos*/
+.menu-download ul {
+    list-style-type: none;
+    cursor: context-menu;
+    padding: 0;
+}
+
+.menu-download ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px;
+    transition: background .3s;
+}
+
+.menu-download ul li a:hover {
+}
+
+/*sub menu*/
+.menu-download ul ul {
+    display: none;
+    position: relative;
+}
+
+.menu-download ul li:hover ul {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #FFD33C;
+}
+
+.menu-download ul li img {
+    width: 100%;
+}
+
+.menu-download ul ul {
+    position: relative;
+}
+
+.menu-download ul ul li a {
+    display: block;
+    background-color: var(--cor-amarela);
+    width: 100%;
+}
+
+
+/*avaliação dos jogos*/
+
+.avaliacao{
+  display: flex;
+ }
+
+.star-icon{
+    background-color: var(--cor-amarela);
+    padding-bottom: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  color: var(--cor-secundaria);
+  font-size: 40px;
+  width: 100%;
+/* alterar o tamanho das estrelas */
+}
+
+.star-icon::before{
+  content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+
+.star-icon:hover ~ 
+.star-icon::before{
+  content: "\2606";
+}
+
+.MD a{
+    color: var(--cor-fonte);
+    text-decoration: none;
+}
+
+.MD button {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    font-size: 1em;
+}
+
+.MD button:hover {
+    background-color: #303030;
+    border-radius: 20px;
+    border: 0;
+    font-size: 1em;
+}
+
+.caixa{
+    width: auto;
+    cursor: context-menu;
+    padding: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    font-size: 2em;
+    color: var(--cor-fonte);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.imgp{
+    position: relative;
+    border: 5px solid rgb(0, 0, 0);
+    display: inline-block;
+}
+
+scroll-container {
+ display: block;
+ height: 100%;
+ overflow-y: scroll;
+ scroll-behavior: smooth;
+ border: 5px solid black;
+ position: relative;
+ }
+
+ scroll-page {
+ display: flex;
+ height: 100%;
+ font-size: 5em;
+ background-color: var(--cor-primaria);
+ }
+
+.conteudoscroll {
+    position: relative;
+    height: 100%;
+}
+
+.imgcont{
+    width: 85%;
+}
+
+.progress{
+    height: 15px;
+    width: 100%;
+    background-color: #777;
+    position: relative;
+}
+
+.progress .progressbar{
+   position: absolute;
+   height: 100%;
+   background-color: #ff0000;
+   animation: progress-animation 6s infinite;
+}
+
+
+@keyframes progress-animation{
+    0% { width: 0%; }
+    
+    100% { width: 100%}
+    
+}
+
+#forusu{
+    height: 6%;
+    width: 100%;
+}
+
+.perfilwid{
+    width: 10%;
+}
+
+.perfil{
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    border: 10px solid var(--cor-secundaria);
+}
+
+.perfil img{
+    height: 100%;
+    width: 100%;
+}
+
+.perfilusu{
+    display: flex;
+    width: 80%;
+    margin: 10px;
+    height: 50px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fonte);
+    font-size: clamp(20px, 30px, 1em);
+    align-items: center;
+    justify-content: center;
+    cursor: context-menu;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+
+.QS{
+    color: #fff;
+    font-size: 3em;
+    width: 95%;
+}
+
+.video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video iframe{
+    width: 95%;
+    height: 107.2vh;
+    max-height: 1016px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.QST{
+    color: #000;
+    font-size: 2em;
+    background-color: #FFD33C;
+    padding: 1%;
+    font-family: monospace;
+    width: 93%;
+    margin-left: 2.5%;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+form{
+	width: 90%;
+	display: block;
+}
+
+form label{
+	text-transform: capitalize;
+	padding-top: 7px;
+}
+
+form label:after{
+	content:":";
+}
+
+form .enviar input{
+    border-radius: 10px;
+    background-color: #FFD33C;
+    color: #000000;
+    box-sizing: border-box;
+    border: 2px solid #000;
+}
+
+form .enviar input:hover{
+    border-radius: 10px;
+    background-color: #8a7224;
+    border: 2px solid #8a7224;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+form .row input{
+	border-radius: 10px;
+ background-color: #FFD33C;
+ color: #000000;
+	box-sizing: border-box;
+	width: 100%;
+ padding-left: 1%;
+}
+
+textarea{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #FFD33C;
+    color: #000000;
+}
+
+.row{
+	clear: both;
+	display: flex;
+}
+
+.aligncamp{
+	float: left;
+}
+
+.coluna1{
+	width: 10%;
+	align-items: stretch;
+	text-align: left;
+}
+
+.coluna2{
+	width: 90%;
+	align-items:stretch;
+	text-align: left;
+}
+
+.colunaidade{
+	align-items:stretch;
+	text-align: left;
+}
+
+.colunamf{
+    width: 45%;
+    align-items: stretch;
+}
+
+#imgfc{
+    width: 40%;
+    height: 300px;
+}
+
+#imgfc tr td img{
+    width: 100%;
+}
+
+#insta img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#zap img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#twitt img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#email img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#face img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#twitch img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#youtube img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#tiktok img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+#koo img:hover{
+    width: 6vw;
+    max-width: 150px;
+}
+
+.forms img{
+        width: 10%;
+}
